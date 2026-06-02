@@ -19,7 +19,7 @@ include '../includes/header.php';
                 
 
                 <h3>MOHAMED MADI</h3>
-                <p class="text-muted">Développeur Full Stack</p>
+                <p class="text-light">Développeur Full Stack</p>
 
                 <div class="d-flex justify-content-center gap-2 flex-wrap">
 
@@ -52,17 +52,17 @@ include '../includes/header.php';
 
                
                 <h3>Abdelmjid Bouguezzar</h3>
-                <p class="text-muted">Designer UI/UX</p>
+                <p class="text-light">Développeur Full Stack</p>
 
                 <div class="d-flex justify-content-center gap-2 flex-wrap">
 
-                    <a href="https://www.linkedin.com/in/abdelmjid-bouguezzar-816660385/"
+                    <a href="https://github.com/mjid4plus-star"
                        target="_blank"
                        class="btn btn-dark">
                         <i class="bi bi-github"></i> GitHub
                     </a>
 
-                    <a href="https://linkedin.com/in/partenaire"
+                    <a href="https://www.linkedin.com/in/abdelmjid-bouguezzar-816660385/"
                        target="_blank"
                        class="btn btn-primary">
                         <i class="bi bi-linkedin"></i> LinkedIn
