@@ -11,7 +11,7 @@ if (!isset($_SESSION['user'])) {
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    // Delete cookies
+ 
     if (isset($_POST["deleteCookies"])) {
 
         setcookie("prenom", "", time() - 3600, "/");
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    // Save cookies
+    
     $prenom = trim($_POST["prenom"] ?? "");
     $theme  = $_POST["theme"] ?? "clair";
     $langue = $_POST["langue"] ?? "fr";

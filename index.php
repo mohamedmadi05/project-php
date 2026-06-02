@@ -2,7 +2,7 @@
 
 $title = "Accueil";
 
-$connecte = true; // change to false to test 404
+$connecte = true; 
 
 if ($connecte):
     require __DIR__ . '/includes/header.php';
@@ -10,7 +10,7 @@ else:
     require __DIR__ . '/includes/404.php';
 endif;
 
-// Lecture du cookie prénom
+
 $prenom = $_COOKIE['prenom'] ?? '';
 
 ?>
