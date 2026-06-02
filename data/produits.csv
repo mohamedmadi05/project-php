@@ -1,0 +1,9 @@
+id,nom,categorie,prix,stock,image
+1,PC Gamer Pro,Ordinateurs,1299.99,8,i1.webp
+2,Laptop UltraBook,Ordinateurs,899.99,15,i2.webp
+3,Caméra 4K Pro,Photographie,649.99,5,i3.webp
+4,Écran 27 144Hz,Moniteurs,349.99,12,i4.webp
+5,Souris Gaming RGB,Périphériques,59.99,25,i5.jfif
+6,Clavier Mécanique,Périphériques,89.99,18,i6.webp
+7,Webcam Full HD,Périphériques,79.99,10,i7.jpg 
+8,Casque Audio Pro,Audio,129.99,7,i8.webp
