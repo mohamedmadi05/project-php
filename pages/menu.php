@@ -4,10 +4,8 @@ $titre = "Menu";
 
 $produits = [];
 
-// Open CSV file
-if (($handle = fopen("../data/produits.csv", "r")) !== false) {
 
-    // Read header row
+if (($handle = fopen("../data/produits.csv", "r")) !== false) {
     fgetcsv($handle, 10000, ",");
 
     while (($row = fgetcsv($handle, 10000, ",")) !== false) {
