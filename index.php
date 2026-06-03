@@ -18,41 +18,28 @@ $prenom = $_COOKIE['prenom'] ?? '';
 <?php if ($connecte): ?>
 
 <div class="container mt-5">
-
-    
-
-
-    
-
     <?php if (!empty($prenom)): ?>
 
         <div class="alert alert-info">
         <label for="">    👋 hello  <strong><?= htmlspecialchars($prenom) ?></strong>
             <h1> Welcome to our store</h1></label>
         </div>
-
         <p>
             Votre profil est enregistré dans les cookies.
         </p>
-
         <a href="pages/profil.php" class="btn btn-primary">
             Modifier mes préférences
         </a>
-
     <?php else: ?>
-
         <div class="alert alert-warning">
             Aucun profil trouvé.
         </div>
-
         <p>
             Créez votre profil pour enregistrer vos préférences.
         </p>
-
         <a href="pages/profil.php" class="btn btn-success">
             Créer mon profil
         </a>
-
     <?php endif; ?>
 
 </div>
