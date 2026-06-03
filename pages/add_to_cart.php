@@ -18,7 +18,7 @@ $quantite = (int) ($_POST['quantite'] ?? 1);
 
 if ($id) {
 
-    /* IF EXISTS → UPDATE QUANTITY */
+
     if (isset($_SESSION['panier'][$id])) {
         $_SESSION['panier'][$id]['quantite'] += $quantite;
     } else {

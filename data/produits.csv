@@ -1,5 +1,5 @@
 id,nom,categorie,prix,stock,image
-1,"PC Gamer Pro",Ordinateurs,1299.99,8,i1.webp
+1,"PC Gamer Pro",Ordinateurs,0.93,8,i1.webp
 2,"Laptop UltraBook",Ordinateurs,800.98,15,i2.webp
 3,"Caméra 4K Pro",Photographie,649.99,5,i3.webp
 4,"Écran 27 144Hz",Moniteurs,349.99,12,i4.webp
