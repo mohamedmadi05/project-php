@@ -11,7 +11,7 @@ if (!isset($_SESSION['user'])) {
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
- 
+    // Delete cookies
     if (isset($_POST["deleteCookies"])) {
 
         setcookie("prenom", "", time() - 3600, "/");

@@ -2,14 +2,15 @@
 
 $title = "Accueil";
 
-$connecte = true; 
+$connecte = true;
 
-if ($connecte):
-    require __DIR__ . '/includes/header.php';
-else:
-    require __DIR__ . '/includes/404.php';
-endif;
-
+// Header
+if ($connecte) {
+    require_once __DIR__ . '/includes/header.php';
+} else {
+    require_once __DIR__ . '/includes/404.php';
+    exit;
+}
 
 $prenom = $_COOKIE['prenom'] ?? '';
 
@@ -18,28 +19,36 @@ $prenom = $_COOKIE['prenom'] ?? '';
 <?php if ($connecte): ?>
 
 <div class="container mt-5">
+
     <?php if (!empty($prenom)): ?>
 
         <div class="alert alert-info">
-        <label for="">    👋 hello  <strong><?= htmlspecialchars($prenom) ?></strong>
-            <h1> Welcome to our store</h1></label>
+            👋 Hello <strong><?= htmlspecialchars($prenom) ?></strong>
+            <h1>Welcome to our store</h1>
         </div>
+
         <p>
             Votre profil est enregistré dans les cookies.
         </p>
+
         <a href="pages/profil.php" class="btn btn-primary">
             Modifier mes préférences
         </a>
+
     <?php else: ?>
+
         <div class="alert alert-warning">
             Aucun profil trouvé.
         </div>
+
         <p>
             Créez votre profil pour enregistrer vos préférences.
         </p>
+
         <a href="pages/profil.php" class="btn btn-success">
             Créer mon profil
         </a>
+
     <?php endif; ?>
 
 </div>
@@ -48,11 +57,11 @@ $prenom = $_COOKIE['prenom'] ?? '';
 
 <div class="container mt-5">
 
-    <p class="alert alert-danger">
+    <div class="alert alert-danger">
         Veuillez vous connecter pour accéder aux produits de notre boutique.
-    </p>
+    </div>
 
-    <a href="/store/index.php" class="btn btn-primary">
+    <a href="index.php" class="btn btn-primary">
         Retour à l'accueil
     </a>
 
@@ -60,4 +69,4 @@ $prenom = $_COOKIE['prenom'] ?? '';
 
 <?php endif; ?>
 
-<?php require __DIR__ . '/includes/footer.php'; ?>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
